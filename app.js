@@ -8,11 +8,14 @@ var bodyParser = require('body-parser');
 
 // Mongoose stuff
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/mern-local-auth');
+mongoose.connect('mongodb://localhost/seattle-addict', { useMongoClient: true }); //commented out for heroku // "boilerplate" will be name of db
+// mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});  // for heroku deployment
 
+// This shows the app where to find the file for the content to load on the page
 var index = require('./routes/index');
 var users = require('./routes/users');
 var auth = require('./routes/auth');
+var events = require('./routes/events');
 
 var app = express();
 
@@ -22,7 +25,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); //commented out for heroku
+// app.use(express.static(path.resolve(__dirname, 'client', 'build'))); //for heroku deployment
 
 app.use(function(req, res, next) {
   // before every route, attach the flash messages and current user to res.locals
@@ -30,26 +34,16 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/', index);
+// This assigns a path to the file contents
+app.use('/', index); //commented out for heroku deployment
 app.use('/users', users);
 app.use('/auth', auth);
-
-// catch 404 and forward to error handler - commented out
-// app.use(function(req, res, next) {
-//   var err = new Error('Not Found');
-//   err.status = 404;
-//   next(err);
+app.use('/events', events);
+// for heroku deployment
+// app.get('*', function(req, res, next) {
+// 	res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 // });
-//
-// // error handler
-// app.use(function(err, req, res, next) {
-//   // set locals, only providing error in development
-//   res.locals.message = err.message;
-//   res.locals.error = req.app.get('env') === 'development' ? err : {};
-//
-//   // render the error page
-//   res.status(err.status || 500);
-//   res.render('error');
-// });
+////PACKAGE.JSON ITEM: "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+////PACKAGE.JSON ITEM: PORT=3001 - for non-heroku build
 
 module.exports = app;
