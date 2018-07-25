@@ -12,14 +12,18 @@ var userSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    minlength: 5,
+    minlength: 1,
     maxlength: 99
   },
   password: {
     type: String,
     required: true,
-    minlength: 8,
+    minlength: 1,
     maxlength: 99
+  },
+  eventsGO: {
+    type: Array;
+    required: false;
   }
 });
 

@@ -9,7 +9,10 @@ import Signup from './Signup';
 import Login from './Login';
 import Logout from './Logout';
 import UserProfile from './UserProfile';
+import Logo from './Logo'
 import axios from 'axios';
+
+import Background from './PPM.jpg'
 
 class App extends Component {
   constructor(props) {
@@ -64,22 +67,30 @@ class App extends Component {
     var theUser = this.state.user
     if (typeof this.state.user === 'object' && Object.keys(this.state.user).length !== 0) {
       return (
-        <div className='App'>
-          <UserProfile user={this.state.user} logout={this.logout} />
-        </div>
+        <Router>
+          <Route className='app' exact path="/"
+              render={(props) => <UserProfile user={this.state.user} logout={this.logout}/>}
+            />
+        </Router>
       );
     } else {
       return (
-        <div className='App'>
-
-          <div className='SignupBox'>
-            <Signup lift={this.liftTokenToState} />
+        <div>
+          <div className='TopBar'>
+            <Logo />
+            <div className='AccountButtons'>
+              <div className='SignupBox'>
+                <Signup lift={this.liftTokenToState} />
+              </div>
+              <div className='LoginBox'>
+                <Login lift={this.liftTokenToState} />
+              </div>
+            </div>
           </div>
 
-          <div className='LoginBox'>
-            <Login lift={this.liftTokenToState} />
+          <div>
+            <img className='Background' src={Background}/>
           </div>
-
         </div>
       );
     }

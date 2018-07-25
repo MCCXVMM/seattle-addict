@@ -1,5 +1,37 @@
-.App {
+.TopBar {
+  display: flex;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  width: 100%;
+  background: beige;
+}
+
+.Banner{
+  display: flex;
+  width: calc(100% - 270px);
+  overflow: hidden;
+}
+
+.Logo {
+  margin: 0.5em;
+  float: left;
+  width: auto;
+  height: 150px;
+}
+
+.Greeting {
+  font-size: 50px;
+  font-style: italic;
   text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.AccountButtons {
+  float: right;
+  text-align: right;
+  width: 270px;
 }
 
 .SignupBox {
@@ -13,6 +45,35 @@
 }
 
 .LogoutBox {
-  background: lightred;
+  background: red;
   padding: 0.5em;
+}
+
+.Background {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 667px) {
+  .Logo {
+    width: auto;
+    height: 50px;
+  }
+
+  .Greeting {
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .AccountButtons {
+    width: 100px;
+  }
+
+  .SignupBox, .LoginBox, .LogoutBox {
+    font-size: 10px;
+    
+  }
 }
