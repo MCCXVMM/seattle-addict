@@ -50,7 +50,7 @@ router.get('/signup', function(req, res, next) {
 /* POST /auth/signup route */
 router.post('/signup', function(req, res, next) {
   // Find by email
-  User.findOne({ email: req.body.email }, function(err, user) {
+  User.findOne({ email: req.body.email }, { password: req.body.password }, function(err, user) {
     if (user) {
       res.redirect('/auth/signup');
     } else {

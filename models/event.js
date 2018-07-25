@@ -7,9 +7,11 @@ var eventSchema = new mongoose.Schema({
   },
   description: {
     type: String,
+    required: true
   },
   address: {
     type: String,
+    required: true
   }
 });
 

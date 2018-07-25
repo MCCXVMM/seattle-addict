@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 
 // Mongoose stuff
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/seattle-addict', { useMongoClient: true }); //commented out for heroku // "boilerplate" will be name of db
+mongoose.connect('mongodb://MCCXVMM:$&drugzRgr8t@ds018508.mlab.com:18508/seattleaddict', { useMongoClient: true }); //commented out for heroku // "boilerplate" will be name of db
 // mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});  // for heroku deployment
 
 // This shows the app where to find the file for the content to load on the page

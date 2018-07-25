@@ -21,8 +21,8 @@ var userSchema = new mongoose.Schema({
     minlength: 1,
     maxlength: 99
   },
-  eventsGO: {
-    type: Array;
+  currentEvents: {
+    type: {};
     required: false;
   }
 });
