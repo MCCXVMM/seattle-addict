@@ -76,7 +76,36 @@ class App extends Component {
     } else {
       return (
         <div>
-          <div className='TopBar'>
+          <table>
+            <tr>
+              <td>
+                <Logo />
+              </td>
+              <td>
+                <div className='NavBar'>
+                  <div className='About'>
+                      <p> About </p>
+                  </div>
+                  <div className='Map'>
+                      <p>Map</p>
+                  </div>
+                  <div className='Calendar'>
+                      <p>Calendar</p>
+                  </div>
+                  <div className='Signup'>
+                      <p>Sign Up</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan='2'>
+                <img className='Background' src={Background} alt='Background' />
+              </td>
+            </tr>
+          </table>
+
+          {/* <div className='TopBar'>
             <Logo />
             <div className='AccountButtons'>
               <div className='SignupBox'>
@@ -90,7 +119,7 @@ class App extends Component {
 
           <div>
             <img className='Background' src={Background} alt='Background' />
-          </div>
+          </div> */}
         </div>
       );
     }
