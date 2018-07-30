@@ -1,15 +1,23 @@
-.TopBar {
-  display: flex;
-  overflow: hidden;
-  border-style: solid;
-  border-width: 0px 0px 5px 0px;
-  width: 100%;
-  background: beige;
+html {
+  background: grey;
 }
 
-.Banner{
+.NavBar {
+  margin-top: 40px;
+  display: inline-flex;
+}
+
+.About p, .Map p, .Calendar p, .Signup p{
+  font-family: Arial;
+  font-size: 15px;
+  color: white;
+  text-decoration: none solid rgb(255, 255, 255);
+  margin: 5px;
+}
+
+.Banner {
   display: flex;
-  width: calc(100% - 270px);
+  width: 100%;
   overflow: hidden;
 }
 
@@ -21,32 +29,12 @@
 }
 
 .Greeting {
-  font-size: 50px;
+  font-size: 25px;
   font-style: italic;
   text-align: center;
   width: 100%;
   margin: auto;
-}
-
-.AccountButtons {
-  float: right;
-  text-align: right;
-  width: 270px;
-}
-
-.SignupBox {
-  background: lightgreen;
-  padding: 0.5em;
-}
-
-.LoginBox {
-  background: lightblue;
-  padding: 0.5em;
-}
-
-.LogoutBox {
-  background: red;
-  padding: 0.5em;
+  color: white;
 }
 
 .Background {
@@ -66,14 +54,5 @@
     text-align: center;
     width: 100%;
     margin: auto;
-  }
-
-  .AccountButtons {
-    width: 100px;
-  }
-
-  .SignupBox, .LoginBox, .LogoutBox {
-    font-size: 10px;
-    
   }
 }
