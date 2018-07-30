@@ -89,7 +89,7 @@ class App extends Component {
           </div>
 
           <div>
-            <img className='Background' src={Background}/>
+            <img className='Background' src={Background} alt='Background' />
           </div>
         </div>
       );
