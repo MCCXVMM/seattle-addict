@@ -4,13 +4,13 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import './App.css';
 import Signup from './Signup';
 import Login from './Login';
 import Logout from './Logout';
 import UserProfile from './UserProfile';
 import Logo from './Logo'
 import axios from 'axios';
+import './App.css';
 
 import Background from './PPM.jpg'
 
@@ -75,23 +75,56 @@ class App extends Component {
       );
     } else {
       return (
-        <div>
-          <div className='TopBar'>
-            <Logo />
-            <div className='AccountButtons'>
-              <div className='SignupBox'>
-                <Signup lift={this.liftTokenToState} />
+      <div>
+        <table>
+          <tr>
+            <td>
+              <Logo />
+            </td>
+            <td>
+              <div className='NavBar'>
+                <div className='About'>
+                    <p> About </p>
+                </div>
+                <div className='Map'>
+                    <p>Map</p>
+                </div>
+                <div className='Calendar'>
+                    <p>Calendar</p>
+                </div>
+                <div className='Signup'>
+                    <p>Sign Up</p>
+                </div>
               </div>
-              <div className='LoginBox'>
-                <Login lift={this.liftTokenToState} />
-              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan='2'>
+              <img className='Background' src={Background}/>
+            </td>
+          </tr>
+        </table>
+        {/* <div classname='TopBar'>
+          <Logo />
+          <div className='NavBar'>
+            <div className='About'>
+                <p> About </p>
+            </div>
+            <div className='Map'>
+                <p>Map</p>
+            </div>
+            <div className='Calendar'>
+                <p>Calendar</p>
+            </div>
+            <div className='Signup'>
+                <p>Sign Up</p>
             </div>
           </div>
-
-          <div>
-            <img className='Background' src={Background}/>
-          </div>
         </div>
+        <div>
+          <img className='Background' src={Background}/>
+        </div> */}
+      </div>
       );
     }
   }

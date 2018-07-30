@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Logout from './Logout';
+import './UserProfile.css';
 
 class UserProfile extends Component {
   constructor(props) {
@@ -16,7 +17,6 @@ class UserProfile extends Component {
         <table>
           <tr>Here are your events</tr>
           <tr>
-            <td>{this.props.user.name}</td>
             <td>{this.props.user.name}</td>
           </tr>
         </table>
