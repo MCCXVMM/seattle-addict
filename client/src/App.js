@@ -4,13 +4,16 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import './App.css';
 import Signup from './Signup';
 import Login from './Login';
 import Logout from './Logout';
 import UserProfile from './UserProfile';
-import Logo from './Logo'
+import Welcome from './Welcome'
+import Nav from './Nav'
+
 import axios from 'axios';
+
+import './App.css';
 
 import Background from './PPM.jpg'
 
@@ -76,26 +79,13 @@ class App extends Component {
     } else {
       return (
         <div>
-          <table>
+          <table className='Homepage'>
             <tr>
               <td>
-                <Logo />
+                <Welcome />
               </td>
               <td>
-                <div className='NavBar'>
-                  <div className='About'>
-                      <p> About </p>
-                  </div>
-                  <div className='Map'>
-                      <p>Map</p>
-                  </div>
-                  <div className='Calendar'>
-                      <p>Calendar</p>
-                  </div>
-                  <div className='Signup'>
-                      <p>Sign Up</p>
-                  </div>
-                </div>
+                <Nav />
               </td>
             </tr>
             <tr>

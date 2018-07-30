@@ -2,22 +2,17 @@ html {
   background: grey;
 }
 
-.NavBar {
-  margin-top: 40px;
-  display: inline-flex;
+.Homepage {
+  border-spacing: 0px;
+  width: 100vw;
 }
 
-.About p, .Map p, .Calendar p, .Signup p{
-  font-family: Arial;
-  font-size: 15px;
-  color: white;
-  text-decoration: none solid rgb(255, 255, 255);
-  margin: 5px;
+.Homepage td {
+  padding: 0px;
 }
 
-.Banner {
+.WelcomeBar {
   display: flex;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -25,11 +20,11 @@ html {
   margin: 0.5em;
   float: left;
   width: auto;
-  height: 150px;
+  height: 100px;
 }
 
 .Greeting {
-  font-size: 25px;
+  font-size: 50px;
   font-style: italic;
   text-align: center;
   width: 100%;
@@ -37,8 +32,21 @@ html {
   color: white;
 }
 
+.NavBar {
+  margin-top: 40px;
+  display: flex;
+}
+
+.About p, .Map p, .Calendar p, .Signup p{
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+  text-decoration: none solid rgb(255, 255, 255);
+  margin: 5px;
+}
+
 .Background {
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
@@ -49,12 +57,21 @@ html {
   }
 
   .Greeting {
-    font-size: 25px;
+    font-size: 15px;
     font-style: italic;
     text-align: center;
     width: 100%;
     margin: auto;
   }
+
+  .About p, .Map p, .Calendar p, .Signup p{
+    font-size: 5px;
+  }
+
+  .NavBar {
+    display: block;
+  }
+
 }
 
 /* .TopBar {
