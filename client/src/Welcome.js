@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './Logo.1.png'
 
-class Logo extends Component {
+class Welcome extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -11,7 +11,7 @@ class Logo extends Component {
 
   render() {
     return (
-      <div className='Banner'>
+      <div className='WelcomeBar'>
         <img className='Logo' src={logo} alt ='broken' />
         <p className='Greeting'>{this.state.greeting}</p>
       </div>
@@ -19,4 +19,4 @@ class Logo extends Component {
   }
 }
 
-export default Logo;
+export default Welcome;
