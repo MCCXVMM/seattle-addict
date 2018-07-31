@@ -4,18 +4,17 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import Background from './PPM.jpg'
 import Signup from './Signup';
 import Login from './Login';
 import Logout from './Logout';
 import UserProfile from './UserProfile';
-import Welcome from './Welcome'
-import Nav from './Nav'
-
+import Logo from './Logo';
+import Skyline from './Skyline';
+import Nav from './Nav';
 import axios from 'axios';
 
 import './App.css';
-
-import Background from './PPM.jpg'
 
 class App extends Component {
   constructor(props) {
@@ -82,14 +81,17 @@ class App extends Component {
           <table className='Homepage'>
             <tr>
               <td>
-                <Welcome />
+                <Logo />
+              </td>
+              <td>
+                <Skyline />
               </td>
               <td>
                 <Nav />
               </td>
             </tr>
             <tr>
-              <td colspan='2'>
+              <td colspan='3'>
                 <img className='Background' src={Background} alt='Background' />
               </td>
             </tr>

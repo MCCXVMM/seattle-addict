@@ -10,17 +10,17 @@ class Nav extends Component {
 
   render() {
     return (
-      <div className='NavBar'>
-        <div className='About'>
+      <div id='NavBar'>
+        <div className='ButtonBorder'>
             <p> About </p>
         </div>
-        <div className='Map'>
+        <div className='ButtonBorder'>
             <p>Map</p>
         </div>
-        <div className='Calendar'>
+        <div className='ButtonBorder'>
             <p>Calendar</p>
         </div>
-        <div className='Signup'>
+        <div className='Button'>
             <p>Sign Up</p>
         </div>
       </div>
