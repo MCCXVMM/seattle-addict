@@ -27,7 +27,6 @@ html {
 
 #NavBar {
   margin-top: 40px;
-<<<<<<< HEAD
   width: 320px;
   display: flex;
 }
@@ -38,13 +37,6 @@ html {
 }
 
 .Button p, .ButtonBorder p {
-=======
-  width: 290px;
-  display: flex;
-}
-
-.Button p {
->>>>>>> bc309fdcb09f7614bca413c30a6c3ccddeedb000
   font-family: Arial;
   font-size: 20px;
   color: white;
@@ -64,25 +56,12 @@ html {
     height: 50px;
   }
 
-<<<<<<< HEAD
   #Skyline {
     height: 50px;
     overflow: hidden;
   }
 
   #NavBar {
-=======
-  .Skyline {
-    height: 50px;
-    overflow: hidden;
-  }
-
-.Button p {
-    font-size: 10px;
-  }
-
-  .NavBar {
->>>>>>> bc309fdcb09f7614bca413c30a6c3ccddeedb000
     width: auto;
     margin-top: 0px;
     display: block;
