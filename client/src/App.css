@@ -1,5 +1,5 @@
 html {
-  background: grey;
+  background: black;
 }
 
 .Homepage {
@@ -9,69 +9,69 @@ html {
 
 .Homepage td {
   padding: 0px;
+  vertical-align: bottom;
 }
 
-.WelcomeBar {
-  display: flex;
-  overflow: hidden;
-}
-
-.Logo {
+#Logo {
   margin: 0.5em;
   float: left;
   width: auto;
   height: 100px;
 }
 
-.Greeting {
-  font-size: 50px;
-  font-style: italic;
-  text-align: center;
+#Skyline {
   width: 100%;
-  margin: auto;
-  color: white;
+  height: 100px;
+  overflow: hidden;
 }
 
-.NavBar {
+#NavBar {
   margin-top: 40px;
+  width: 320px;
   display: flex;
 }
 
-.About p, .Map p, .Calendar p, .Signup p{
+.ButtonBorder p {
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+.Button p, .ButtonBorder p {
   font-family: Arial;
   font-size: 20px;
   color: white;
-  text-decoration: none solid rgb(255, 255, 255);
   margin: 5px;
 }
 
 .Background {
   width: 100vw;
   height: auto;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
 @media screen and (max-width: 667px) {
-  .Logo {
+  #Logo {
     width: auto;
     height: 50px;
   }
 
-  .Greeting {
-    font-size: 15px;
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-    margin: auto;
+  #Skyline {
+    height: 50px;
+    overflow: hidden;
   }
 
-  .About p, .Map p, .Calendar p, .Signup p{
-    font-size: 5px;
-  }
-
-  .NavBar {
+  #NavBar {
+    width: auto;
+    margin-top: 0px;
     display: block;
   }
 
+  .Button p, .ButtonBorder p {
+    font-size: 10px;
+    border-right: 0px;
+    padding-right: 0px;
+  }
 }
 
 /* .TopBar {
