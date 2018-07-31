@@ -27,11 +27,16 @@ html {
 
 #NavBar {
   margin-top: 40px;
-  width: 290px;
+  width: 320px;
   display: flex;
 }
 
-.Button p {
+.ButtonBorder p {
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+.Button p, .ButtonBorder p {
   font-family: Arial;
   font-size: 20px;
   color: white;
@@ -46,26 +51,27 @@ html {
 }
 
 @media screen and (max-width: 667px) {
-  .Logo {
+  #Logo {
     width: auto;
     height: 50px;
   }
 
-  .Skyline {
+  #Skyline {
     height: 50px;
     overflow: hidden;
   }
 
-.Button p {
-    font-size: 10px;
-  }
-
-  .NavBar {
+  #NavBar {
     width: auto;
     margin-top: 0px;
     display: block;
   }
 
+  .Button p, .ButtonBorder p {
+    font-size: 10px;
+    border-right: 0px;
+    padding-right: 0px;
+  }
 }
 
 /* .TopBar {

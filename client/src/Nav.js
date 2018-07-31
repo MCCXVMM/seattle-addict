@@ -11,13 +11,13 @@ class Nav extends Component {
   render() {
     return (
       <div id='NavBar'>
-        <div className='Button'>
+        <div className='ButtonBorder'>
             <p> About </p>
         </div>
-        <div className='Button'>
+        <div className='ButtonBorder'>
             <p>Map</p>
         </div>
-        <div className='Button'>
+        <div className='ButtonBorder'>
             <p>Calendar</p>
         </div>
         <div className='Button'>
