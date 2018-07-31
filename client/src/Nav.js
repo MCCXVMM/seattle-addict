@@ -11,6 +11,7 @@ class Nav extends Component {
   render() {
     return (
       <div id='NavBar'>
+<<<<<<< HEAD
         <div className='ButtonBorder'>
             <p> About </p>
         </div>
@@ -18,6 +19,15 @@ class Nav extends Component {
             <p>Map</p>
         </div>
         <div className='ButtonBorder'>
+=======
+        <div className='Button'>
+            <p> About </p>
+        </div>
+        <div className='Button'>
+            <p>Map</p>
+        </div>
+        <div className='Button'>
+>>>>>>> bc309fdcb09f7614bca413c30a6c3ccddeedb000
             <p>Calendar</p>
         </div>
         <div className='Button'>
