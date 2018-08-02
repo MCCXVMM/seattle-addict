@@ -21,9 +21,14 @@ var userSchema = new mongoose.Schema({
     minlength: 1,
     maxlength: 99
   },
-  currentEvents: {
-    type: {},
-    required: false
+  // currentEvents: { HOW TO MAKE LIST??? OR ARRAY????
+  //   type: {},
+  //   required: false
+  // },
+  admin: {
+    type: Boolean,
+    required: true,
+    default: false
   }
 });
 

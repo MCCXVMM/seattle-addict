@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './Logo.1.png';
 
-class Logo extends Component {
+class MapOfEvents extends Component {
   constructor(props) {
     super(props)
   }
@@ -9,10 +8,9 @@ class Logo extends Component {
   render() {
     return (
       <div>
-        <img id='Logo' src={logo} alt ='broken' />
       </div>
     );
   }
 }
 
-export default Logo;
+export default MapOfEvents;

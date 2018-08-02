@@ -22,13 +22,18 @@ class Login extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    axios.post('/auth/login', {
-      email: this.state.email,
-      password: this.state.password
-    }).then(result => {
-      localStorage.setItem('mernToken', result.data.token)
-      this.props.lift(result.data)
-    })
+    if(this.state.email.length !== 0 && this.state.password.length !== 0) {
+      axios.post('/auth/login', {
+        email: this.state.email,
+        password: this.state.password
+      }).then(result => {
+        localStorage.setItem('mernToken', result.data.token)
+        this.props.lift(result.data)
+        window.location='/user-profile/:id'
+      })
+    } else {
+      alert('stop')
+    }
   }
 
   render() {

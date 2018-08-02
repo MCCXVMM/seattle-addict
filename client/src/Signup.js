@@ -27,15 +27,31 @@ class Signup extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    axios.post('/auth/signup', {
-      name: this.state.name,
-      email: this.state.email,
-      password: this.state.password
-    }).then(result => {
-      console.log(result.data)
-      localStorage.setItem('mernToken', result.data.token)
-      this.props.lift(result.data)
-    })
+    if(this.state.name.length !== 0 && this.state.email.length !== 0 && this.state.password.length !== 0) {
+      axios.post('/auth/signup', {
+        name: this.state.name,
+        email: this.state.email,
+        password: this.state.password
+      }).then(result => {
+        console.log(result.data)
+        localStorage.setItem('mernToken', result.data.token)
+        this.props.lift(result.data)
+        window.location='/user-profile/:id'
+      })
+    } else {
+      var Message = ''
+      if(this.state.name.length !== 0) {
+        Message = Message.concat('Name must not be empty ')
+      }
+      if(this.state.email.length !== 0) {
+        Message = Message.concat('Email must not be empty ')
+      }
+      if(this.state.password.length !== 0) {
+        Message = Message.concat('Password must not be empty ')
+      }
+      console.log(Message)
+      alert(Message)
+    }
   }
 
   render() {
