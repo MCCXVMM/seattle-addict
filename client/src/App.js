@@ -17,13 +17,8 @@ import SignupOrLogin from './SignupOrLogin';
 import AboutUs from './AboutUs';
 import MapOfEvents from './MapOfEvents';
 
-<<<<<<< HEAD
-import Background from './PPM.jpg'
-import Skyline from './Skyline.png'
-=======
 /* ======== Import for CSS ======== */
 import './App.css';
->>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 
 class App extends Component {
   constructor(props) {

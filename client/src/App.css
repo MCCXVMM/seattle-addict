@@ -8,34 +8,7 @@ html {
   border-spacing: 0px;
 }
 
-<<<<<<< HEAD
-.About{
-border-right-style: solid;
-border-color: white
-}
-
-.Map{
-  border-right-style: solid;
-  border-left-style: solid;
-  border-color: white
-}
-
-.Calendar{
-  border-right-style: solid;
-  border-left-style: solid;
-  border-color: white
-}
-
-.Signup{
-  border-right-style: solid;
-  border-left-style: solid;
-  border-color: white
-}
-
-.Homepage td {
-=======
 #Homepage td {
->>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
   padding: 0px;
 }
 
@@ -54,17 +27,6 @@ border-color: white
 /* ===== CSS for Logo ===== */
 #Logo {
   width: auto;
-<<<<<<< HEAD
-  height: 150px;
-}
-
-.Skyline {
-  display: block;
-   margin-left: auto;
-   margin-right: auto;
-  width: 50%;
-  height: 40%;
-=======
   height: 300px;
   float: left;
 }
@@ -75,7 +37,6 @@ border-color: white
   height: 100%;
   overflow: hidden;
   vertical-align: bottom;
->>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 }
 
 /* ===== CSS for Links ===== */
@@ -95,75 +56,12 @@ border-color: white
   font-family: Arial;
   font-size: 20px;
   color: white;
-<<<<<<< HEAD
-  text-decoration: none solid rgb(255, 255, 255);
-  margin: 40px;
-}
-
-.Background {
-  width: 100vw;
-  height: auto;
-}
-
-@media screen and (max-width: 667px) {
-  .Logo {
-    width: auto;
-    height: 50px;
-  }
-
-  .Skyline {
-    width: 60%;
-    height: auto;
-    float: center;
-
-  }
-
-  .About p, .Map p, .Calendar p, .Signup p{
-    font-size: 5px;
-  }
-
-  .NavBar {
-    display: block;
-  }
-
-}
-
-/* .TopBar {
-  display: flex;
-  overflow: hidden;
-  border-style: solid;
-  border-width: 0px 0px 5px 0px;
-  width: 100%;
-  background: beige;
-}
-
-.Banner{
-  display: flex;
-  width: calc(100% - 270px);
-  overflow: hidden;
-}
-
-.Logo {
-  margin: 0.5em;
-  float: left;
-  width: auto;
-  height: 150px;
-}
-
-.Greeting {
-  font-size: 50px;
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  margin: auto;
-=======
   margin: 5px;
 }
 
 /* ===== CSS for UserProfile ===== */
 .UserProfileBox {
   color: white;
->>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 }
 
 /* ===== CSS for SignupOrLogin ===== */
