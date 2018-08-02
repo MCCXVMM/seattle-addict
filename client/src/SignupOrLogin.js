@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBar from './NavBar';
 import Signup from './Signup';
 import Login from './Login';
 
@@ -20,6 +21,7 @@ class SignupOrLogin extends Component {
   render() {
     return (
       <div className='AccountBoxes'>
+        <NavBar />
         <div className='SignupBox'>
           <Signup lift={this.liftTokenToState} />
         </div>

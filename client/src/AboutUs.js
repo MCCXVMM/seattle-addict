@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBar from './NavBar';
 
 class AboutUs extends Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class AboutUs extends Component {
   render() {
     return (
       <div>
+        <NavBar />
       </div>
     );
   }
