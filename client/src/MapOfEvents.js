@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBar from './NavBar';
 
 class MapOfEvents extends Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class MapOfEvents extends Component {
   render() {
     return (
       <div>
+        <NavBar />
       </div>
     );
   }
