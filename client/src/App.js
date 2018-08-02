@@ -6,19 +6,8 @@ import {
   Link,
   Switch
 } from 'react-router-dom';
-<<<<<<< HEAD
-import Background from './PPM.jpg'
-import Signup from './Signup';
-import Login from './Login';
-import Logout from './Logout';
-import UserProfile from './UserProfile';
-import Logo from './Logo';
-import Skyline from './Skyline';
-import Nav from './Nav';
-=======
 
 /* ======== Imports for axios ======== */
->>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 import axios from 'axios';
 
 /* ======== Imports for components ======== */
@@ -28,12 +17,9 @@ import SignupOrLogin from './SignupOrLogin';
 import AboutUs from './AboutUs';
 import MapOfEvents from './MapOfEvents';
 
-<<<<<<< HEAD
-=======
 /* ======== Import for CSS ======== */
 import './App.css';
 
->>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 class App extends Component {
   constructor(props) {
     super(props)
@@ -108,48 +94,6 @@ class App extends Component {
           </Switch>
         </Router>
       );
-<<<<<<< HEAD
-    } else {
-      return (
-        <div>
-          <table className='Homepage'>
-            <tr>
-              <td>
-                <Logo />
-              </td>
-              <td>
-                <Skyline />
-              </td>
-              <td>
-                <Nav />
-              </td>
-            </tr>
-            <tr>
-              <td colspan='3'>
-                <img className='Background' src={Background} alt='Background' />
-              </td>
-            </tr>
-          </table>
-
-          {/* <div className='TopBar'>
-            <Logo />
-            <div className='AccountButtons'>
-              <div className='SignupBox'>
-                <Signup lift={this.liftTokenToState} />
-              </div>
-              <div className='LoginBox'>
-                <Login lift={this.liftTokenToState} />
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <img className='Background' src={Background} alt='Background' />
-          </div> */}
-        </div>
-      );
-=======
->>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
     }
   }
 
