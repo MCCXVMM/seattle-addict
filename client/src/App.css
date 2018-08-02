@@ -83,6 +83,12 @@ html {
   padding: 0.5em;
 }
 
+/* ===== CSS for MapOfEvents ===== */
+.Description {
+  color: white;
+  text-align: left;
+}
+
 @media screen and (max-width: 1024px) {
   #Logo {
     width: auto;
