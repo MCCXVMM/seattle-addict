@@ -13,7 +13,7 @@ class Skyline extends Component {
 
   render() {
     return (
-      <div id='Skyline'>
+      <div>
         <img id='Skyline' src={skyline} alt ='broken' />
       </div>
     );

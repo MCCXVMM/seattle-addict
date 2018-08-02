@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Nav extends Component {
+class Links extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -10,22 +10,19 @@ class Nav extends Component {
 
   render() {
     return (
-      <div id='NavBar'>
+      <div id='Links'>
         <div className='ButtonBorder'>
-            <p> About </p>
+            <p><a href='/about-us'>About Us</a></p>
         </div>
         <div className='ButtonBorder'>
-            <p>Map</p>
-        </div>
-        <div className='ButtonBorder'>
-            <p>Calendar</p>
+            <p><a href='/map-of-events'>Map</a></p>
         </div>
         <div className='Button'>
-            <p>Sign Up</p>
+            <p><a href='/signup-or-login'>Sign Up</a></p>
         </div>
       </div>
     );
   }
 }
 
-export default Nav;
+export default Links;
