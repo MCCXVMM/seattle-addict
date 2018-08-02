@@ -2,23 +2,43 @@ html {
   background: black;
 }
 
-.Homepage {
-  border-spacing: 0px;
+/* ===== CSS for Homepage ===== */
+#Homepage table {
   width: 100vw;
+  border-spacing: 0px;
 }
 
-.Homepage td {
+#Homepage td {
   padding: 0px;
   vertical-align: bottom;
 }
 
+<<<<<<< HEAD
 #Logo {
   margin: 0.5em;
   float: left;
-  width: auto;
-  height: 100px;
+=======
+.Background {
+  width: 100vw;
+  height: auto;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
+/* ===== CSS for NavBar ===== */
+#NavBar td {
+  vertical-align: bottom;
+}
+
+/* ===== CSS for Logo ===== */
+#Logo {
+>>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
+  width: auto;
+  height: 300px;
+  float: left;
+}
+
+<<<<<<< HEAD
 #Skyline {
   width: 100%;
   height: 100px;
@@ -26,9 +46,23 @@ html {
 }
 
 #NavBar {
+=======
+/* ===== CSS for Skyline ===== */
+#Skyline {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+/* ===== CSS for Links ===== */
+#Links {
+  width: auto;
+>>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
   margin-top: 40px;
   width: 320px;
   display: flex;
+  white-space:nowrap;
 }
 
 .ButtonBorder p {
@@ -36,6 +70,14 @@ html {
   padding-right: 10px;
 }
 
+<<<<<<< HEAD
+.ButtonBorder p {
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+=======
+>>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 .Button p, .ButtonBorder p {
   font-family: Arial;
   font-size: 20px;
@@ -43,6 +85,7 @@ html {
   margin: 5px;
 }
 
+<<<<<<< HEAD
 .Background {
   width: 100vw;
   height: auto;
@@ -102,9 +145,15 @@ html {
   text-align: center;
   width: 100%;
   margin: auto;
+=======
+/* ===== CSS for UserProfile ===== */
+.UserProfileBox {
+  color: white;
+>>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 }
 
-.AccountButtons {
+/* ===== CSS for SignupOrLogin ===== */
+.AccountBoxes {
   float: right;
   text-align: right;
   width: 270px;
@@ -120,36 +169,32 @@ html {
   padding: 0.5em;
 }
 
-.LogoutBox {
-  background: red;
-  padding: 0.5em;
+@media screen and (max-width: 1024px) {
+  #Logo {
+    width: auto;
+    height: 150px;
+  }
 }
 
-.Background {
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 667px) {
-  .Logo {
+@media screen and (max-width: 375px) {
+  #Logo {
     width: auto;
     height: 50px;
   }
 
-  .Greeting {
-    font-size: 25px;
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-    margin: auto;
+  #Skyline {
+    height: 50px;
   }
 
-  .AccountButtons {
-    width: 100px;
+  #Links {
+    width: auto;
+    margin-top: 0px;
+    display: block;
   }
 
-  .SignupBox, .LoginBox, .LogoutBox {
+  .Button p, .ButtonBorder p {
     font-size: 10px;
-
+    border-right: 0px;
+    padding-right: 0px;
   }
-} */
+}

@@ -1,9 +1,12 @@
+/* ======== Imports for React ======== */
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom';
+<<<<<<< HEAD
 import Background from './PPM.jpg'
 import Signup from './Signup';
 import Login from './Login';
@@ -12,29 +15,45 @@ import UserProfile from './UserProfile';
 import Logo from './Logo';
 import Skyline from './Skyline';
 import Nav from './Nav';
+=======
+
+/* ======== Imports for axios ======== */
+>>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 import axios from 'axios';
 
+/* ======== Imports for components ======== */
+import Homepage from './Homepage';
+import UserProfile from './UserProfile';
+import SignupOrLogin from './SignupOrLogin';
+import AboutUs from './AboutUs';
+import MapOfEvents from './MapOfEvents';
+
+<<<<<<< HEAD
+=======
+/* ======== Import for CSS ======== */
 import './App.css';
 
+>>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       token: '',
-      user: {}
+      user: {},
     }
-    this.liftTokenToState = this.liftTokenToState.bind(this)
+    this.loginUser = this.loginUser.bind(this)
     this.logout = this.logout.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
   }
 
-  liftTokenToState(data) {
+  loginUser(data) {
     this.setState({token: data.token, user: data.user})
   }
 
   logout() {
     localStorage.removeItem('mernToken')
     this.setState({token: '', user: {}})
+    window.location='/'
   }
 
   componentDidMount() {
@@ -66,15 +85,30 @@ class App extends Component {
   }
 
   render() {
-    var theUser = this.state.user
-    if (typeof this.state.user === 'object' && Object.keys(this.state.user).length !== 0) {
+    // var theUser = this.state.user
+    // if (typeof this.state.user === 'object' && Object.keys(this.state.user).length !== 0) {
+    //   return (
+    //     <Router>
+    //
+    //     </Router>
+    //   );
+    // } else {
       return (
         <Router>
-          <Route className='app' exact path="/"
+          <Switch>
+            <Route className='' exact path='/' component={Homepage} />
+            <Route className='' exact path='/user-profile/:id'
               render={(props) => <UserProfile user={this.state.user} logout={this.logout}/>}
             />
+            <Route className='' exact path='/signup-or-login'
+              render={(props) => <SignupOrLogin user={this.state.user} loginUser={this.loginUser} />}
+            />
+            <Route className='' exact path='/about-us' component={AboutUs} />
+            <Route className='' exact path='/map-of-events' component={MapOfEvents} />
+          </Switch>
         </Router>
       );
+<<<<<<< HEAD
     } else {
       return (
         <div>
@@ -114,8 +148,9 @@ class App extends Component {
           </div> */}
         </div>
       );
+=======
+>>>>>>> 906eed8ed9a17fe4c27c058caeca74695a1bca42
     }
   }
-}
 
 export default App;
