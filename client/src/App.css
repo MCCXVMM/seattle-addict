@@ -1,10 +1,33 @@
 html {
-  background: grey;
+  background: black;
 }
 
 .Homepage {
   border-spacing: 0px;
   width: 100vw;
+}
+
+.About{
+border-right-style: solid;
+border-color: white
+}
+
+.Map{
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: white
+}
+
+.Calendar{
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: white
+}
+
+.Signup{
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: white
 }
 
 .Homepage td {
@@ -20,16 +43,15 @@ html {
   margin: 0.5em;
   float: left;
   width: auto;
-  height: 100px;
+  height: 150px;
 }
 
-.Greeting {
-  font-size: 50px;
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  color: white;
+.Skyline {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+  width: 50%;
+  height: 40%;
 }
 
 .NavBar {
@@ -42,7 +64,7 @@ html {
   font-size: 20px;
   color: white;
   text-decoration: none solid rgb(255, 255, 255);
-  margin: 5px;
+  margin: 40px;
 }
 
 .Background {
@@ -56,12 +78,11 @@ html {
     height: 50px;
   }
 
-  .Greeting {
-    font-size: 15px;
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-    margin: auto;
+  .Skyline {
+    width: 60%;
+    height: auto;
+    float: center;
+
   }
 
   .About p, .Map p, .Calendar p, .Signup p{

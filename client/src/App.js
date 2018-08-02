@@ -16,6 +16,7 @@ import axios from 'axios';
 import './App.css';
 
 import Background from './PPM.jpg'
+import Skyline from './Skyline.png'
 
 class App extends Component {
   constructor(props) {

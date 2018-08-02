@@ -21,7 +21,7 @@ class Nav extends Component {
             <p>Calendar</p>
         </div>
         <div className='Signup'>
-            <p>Sign Up</p>
+            <p>Sign Up  </p>
         </div>
       </div>
     );
