@@ -1,10 +1,45 @@
+/* ===== CSS for everything ===== */
 html {
   background: black;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y:auto;
+}
+
+/* ===== CSS for links ===== */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #57b0be;
+}
+
+/* ===== CSS for scrollbar ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-track:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 176, 190);
 }
 
 /* ===== CSS for Homepage ===== */
 #Homepage table {
-  width: 100vw;
+  width: 100%;
   border-spacing: 0px;
 }
 
@@ -13,22 +48,47 @@ html {
 }
 
 .Background {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  border-top: 5px solid white;
   border-bottom: 5px solid white;
 }
 
+/* ===== CSS for AboutUs ===== */
+#AboutUs {
+  background: white;
+  padding: 50px;
+}
+
 /* ===== CSS for NavBar ===== */
+#NavBorder {
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+#NavBar table {
+  width: 100%;
+  border-spacing: 0px;
+  border-bottom: 5px solid white;
+}
+
 #NavBar td {
+  padding: 0px;
   vertical-align: bottom;
 }
 
 /* ===== CSS for Logo ===== */
-#Logo {
+#Logo, #LogoHover {
   width: auto;
-  height: 300px;
+  height: 250px;
   float: left;
+}
+
+#LogoHover {
+  display: none;
+}
+
+#Logo:hover {
+  content: url('Logo.1-hover.png');
 }
 
 /* ===== CSS for Skyline ===== */
@@ -42,21 +102,23 @@ html {
 /* ===== CSS for Links ===== */
 #Links {
   width: auto;
-  margin-top: 40px;
   display: flex;
-  white-space:nowrap;
+  white-space: nowrap;
+  border-top: 5px solid white;
 }
 
-.ButtonBorder p {
+#LinkBorder {
+  border-left: 1px solid white;
   border-right: 1px solid white;
-  padding-right: 10px;
 }
 
-.Button p, .ButtonBorder p {
+.Button {
   font-family: Arial;
-  font-size: 20px;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: white;
-  margin: 5px;
 }
 
 /* ===== CSS for UserProfile ===== */
@@ -81,15 +143,20 @@ html {
   padding: 0.5em;
 }
 
-@media screen and (max-width: 1024px) {
-  #Logo {
+/* ===== CSS for responsiveness of website ===== */
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  #Logo, #LogoHover {
     width: auto;
     height: 150px;
+  }
+
+  .Button {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  #Logo {
+  #Logo, #LogoHover {
     width: auto;
     height: 50px;
   }
@@ -99,14 +166,16 @@ html {
   }
 
   #Links {
-    width: auto;
-    margin-top: 0px;
     display: block;
   }
 
-  .Button p, .ButtonBorder p {
+  #LinkBorder {
+    border: none;
+  }
+
+  .Button {
     font-size: 10px;
-    border-right: 0px;
-    padding-right: 0px;
+    padding: 0px;
+    margin: 0px;
   }
 }
