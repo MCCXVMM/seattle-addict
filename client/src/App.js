@@ -11,6 +11,7 @@ import {
 import axios from 'axios';
 
 /* ======== Imports for components ======== */
+import NavBar from './NavBar'
 import Homepage from './Homepage';
 import UserProfile from './UserProfile';
 import SignupOrLogin from './SignupOrLogin';

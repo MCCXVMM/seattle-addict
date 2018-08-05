@@ -20,13 +20,16 @@ class SignupOrLogin extends Component {
 
   render() {
     return (
-      <div className='AccountBoxes'>
+      <div>
         <NavBar />
-        <div className='SignupBox'>
-          <Signup lift={this.liftTokenToState} />
-        </div>
-        <div className='LoginBox'>
-          <Login lift={this.liftTokenToState} />
+        
+        <div className='AccountBoxes'>
+          <div className='SignupBox'>
+            <Signup lift={this.liftTokenToState} />
+          </div>
+          <div className='LoginBox'>
+            <Login lift={this.liftTokenToState} />
+          </div>
         </div>
       </div>
     );

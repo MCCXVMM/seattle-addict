@@ -10,6 +10,7 @@ class MapOfEvents extends Component {
     return (
       <div>
         <NavBar />
+        // TODO: Add Andy's work here
       </div>
     );
   }

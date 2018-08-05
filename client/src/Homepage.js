@@ -10,13 +10,9 @@ class Homepage extends Component {
   render() {
     return (
       <div id='Homepage'>
+        <NavBar />
         <table>
           <tbody>
-            <tr>
-              <td>
-                <NavBar />
-              </td>
-            </tr>
             <tr>
               <td>
                 <img className='Background' src={Background} alt='Background' />
