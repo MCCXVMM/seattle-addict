@@ -26,11 +26,11 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 1);
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0);
+    -webkit-box-shadow: inset 0 0 0 20px rgba(87, 176, 190, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -57,6 +57,17 @@ a:hover {
 #AboutUs {
   background: white;
   padding: 50px;
+  overflow: hidden;
+}
+
+#GeneralAboutUs {
+  float: left;
+  width: 30%;
+}
+
+#SpecificAboutUs {
+  float: right;
+  width: 70%;
 }
 
 /* ===== CSS for NavBar ===== */
