@@ -10,6 +10,20 @@ class Nav extends Component {
 
   render() {
     return (
+<<<<<<< HEAD
+      <div id='NavBar'>
+        <div className='ButtonBorder'>
+            <p> About </p>
+        </div>
+        <div className='ButtonBorder'>
+            <p>Map</p>
+        </div>
+        <div className='ButtonBorder'>
+            <p>Calendar</p>
+        </div>
+        <div className='Button'>
+            <p>Sign Up</p>
+=======
       <div className='NavBar'>
         <div className='About'>
             <p> About </p>
@@ -22,6 +36,7 @@ class Nav extends Component {
         </div>
         <div className='Signup'>
             <p>Sign Up  </p>
+>>>>>>> 076f450df988a39b88e3d737d9f47d9addc81690
         </div>
       </div>
     );

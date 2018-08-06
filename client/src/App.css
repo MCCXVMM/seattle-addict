@@ -45,6 +45,7 @@ a:hover {
 
 #Homepage td {
   padding: 0px;
+  vertical-align: bottom;
 }
 
 .Background {
@@ -113,6 +114,11 @@ a:hover {
 /* ===== CSS for Links ===== */
 #Links {
   width: auto;
+<<<<<<< HEAD
+=======
+  margin-top: 40px;
+  width: 320px;
+>>>>>>> c3360899a0d78ae1b580b5216f675c92babca535
   display: flex;
   white-space: nowrap;
   border-top: 5px solid white;
@@ -154,9 +160,25 @@ a:hover {
   padding: 0.5em;
 }
 
+<<<<<<< HEAD
 /* ===== CSS for responsiveness of website ===== */
 @media screen and (min-width: 375px) and (max-width: 1024px) {
   #Logo, #LogoHover {
+=======
+/* ===== CSS for MapOfEvents ===== */
+#MapCalDes td {
+  color: white;
+  text-align: left;
+  vertical-align: top;
+}
+#CalDes h1 h2 {
+  font-style: italic;
+  color: blue;
+}
+
+@media screen and (max-width: 1024px) {
+  #Logo {
+>>>>>>> c3360899a0d78ae1b580b5216f675c92babca535
     width: auto;
     height: 150px;
   }
