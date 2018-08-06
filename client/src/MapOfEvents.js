@@ -11,6 +11,7 @@ class MapOfEvents extends Component {
     return (
       <div>
         <NavBar />
+<<<<<<< HEAD
         <div>
           <table id='MapCalDes'>
             <tr>
@@ -36,6 +37,9 @@ class MapOfEvents extends Component {
             </tr>
           </table>
         </div>
+=======
+        // TODO: Add Andy's work here
+>>>>>>> 6e83906bfa198a74960af8821874d911d65511fd
       </div>
 
     );

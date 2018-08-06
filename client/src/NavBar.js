@@ -17,7 +17,7 @@ class NavBar extends Component {
               <td>
                 <Logo />
               </td>
-              <td>
+              <td id='NavBorder'>
                 <Skyline />
               </td>
               <td>
