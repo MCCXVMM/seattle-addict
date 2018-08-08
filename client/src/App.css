@@ -184,11 +184,8 @@ input[type=text]#TEST:focus {
 /* ===== CSS for Links ===== */
 #Links {
   width: auto;
-<<<<<<< HEAD
-=======
   margin-top: 40px;
   width: 320px;
->>>>>>> b37a9c10c50013958cb5db932fdab61e92fcdfd1
   display: flex;
   white-space: nowrap;
   border-top: 5px solid white;
@@ -230,11 +227,6 @@ input[type=text]#TEST:focus {
   padding: 0.5em;
 }
 
-<<<<<<< HEAD
-/* ===== CSS for responsiveness of website ===== */
-@media screen and (min-width: 375px) and (max-width: 1024px) {
-  #Logo, #LogoHover {
-=======
 /* ===== CSS for SecNavButtons ==== */
 
 .button {
@@ -309,7 +301,6 @@ input[type=text]#TEST:focus {
 
 @media screen and (max-width: 1024px) {
   #Logo {
->>>>>>> b37a9c10c50013958cb5db932fdab61e92fcdfd1
     width: auto;
     height: 150px;
   }

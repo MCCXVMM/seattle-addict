@@ -15,7 +15,7 @@ class MapOfEvents extends Component {
           <table id='MapCalDes'>
             <tr>
               <td>
-                <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1ZdjvcSz5tbyURWV4dx5YgBA1PeN0wmtl" width="1500" height="800"></iframe>
+                <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1ZdjvcSz5tbyURWV4dx5YgBA1PeN0wmtl" width="800" height="800"></iframe>
               </td>
               <td>
                 <table id='CalDes'>
