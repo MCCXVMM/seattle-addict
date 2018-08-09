@@ -10,6 +10,10 @@ table {
   border-spacing: 0px;
 }
 
+iframe {
+  display: block;
+}
+
 /* ===== CSS for links ===== */
 a {
   color: white;
@@ -44,6 +48,7 @@ a:hover {
 /* ===== CSS for Homepage ===== */
 #Homepage {
   width: 100%;
+  border-spacing: 0px;
 }
 
 #Homepage td {
@@ -62,13 +67,11 @@ a:hover {
 
  #SearchBar {
   position: absolute;
-  left: 40%;
+  left: 50%;
   top: 50%;
-  align-content: center;
-  transform: translate(-50%, -50%);
 }
 
- input[type=text]#TEST {
+ input[type=text]#SearchBarStyle {
   width: 225px;
   border: 3px solid #555;
   border-radius: 4px;
@@ -81,9 +84,10 @@ a:hover {
   padding: 12px 2px 12px 40px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
  }
 
- input[type=text]#TEST:focus {
+ input[type=text]#SearchBarStyle:focus {
   width: 125%;
 }
 
@@ -103,6 +107,7 @@ a:hover {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    width: 10px;
 }
 
  .button1 {
@@ -110,33 +115,40 @@ a:hover {
     color: black;
     border: 2px solid #555555;
 }
+
  .button1:hover {
     background-color: #555555;
     color: white;
 }
+
  .button2 {
     background-color: white;
     color: black;
     border: 2px solid #555555;
 }
+
  .button2:hover {
     background-color: #555555;
     color: white;
 }
+
  .button3 {
     background-color: white;
     color: black;
     border: 2px solid #555555;
 }
+
  .button3:hover {
     background-color: #555555;
     color: white;
 }
+
  .button4 {
     background-color: white;
     color: black;
     border: 2px solid #555555;
 }
+
  .button4:hover {
   background-color: #555555;
   color: white
@@ -173,7 +185,8 @@ a:hover {
 /* ===== CSS for SignupOrLogin ===== */
 #SignupOrLogin {
   width: 100%;
-  background: white;
+  border-spacing: 0px;
+  background: black;
 }
 
 #SignupOrLogin td {
@@ -202,7 +215,6 @@ a:hover {
   background: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 5px;
-
 }
 
 #SignupBox {
@@ -228,6 +240,7 @@ a:hover {
 #NavBar {
   width: 100%;
   background: black;
+  border-spacing: 0px;
   border-bottom: 5px solid white;
   z-index: 1000;
 }
@@ -240,6 +253,14 @@ a:hover {
 #NavBorder {
   border-left: 5px solid white;
   border-right: 5px solid white;
+}
+
+#LinksBorder {
+  border-top: 5px solid white;
+}
+
+#MusicPlayer {
+  width: 100%;
 }
 
 /* ===== CSS for Logo ===== */
@@ -271,7 +292,6 @@ a:hover {
   width: auto;
   display: flex;
   white-space: nowrap;
-  border-top: 5px solid white;
 }
 
 #LinkBorder {
@@ -309,49 +329,148 @@ a:hover {
 }
 
 /* ===== CSS for responsiveness of website ===== */
-@media screen and (min-width: 375px) and (max-width: 1024px) {
-  #Login {
-    width: 90%;
+@media screen and (min-width: 2560px) {
+  /* borders */
+  #NavBar {
+    border-bottom: 10px solid white;
   }
 
-  #Signup {
-    width: 90%;
+  #NavBorder {
+    border-left: 10px solid white;
+    border-right: 10px solid white;
   }
 
+  #LinksBorder {
+    border-top: 10px solid white;
+  }
+
+  #LinkBorder {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+  }
+
+  /* logo */
   #Logo, #LogoHover {
-    width: auto;
-    height: 150px;
+    height: 350px;
   }
 
-  .Content {
-    margin-top: 150px;
-  }
-
+  /* link buttons */
   .Button p {
-    font-size: 20px;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* music */
+  #MusicPlayer {
+    height: 202px;
+  }
+}
+
+@media screen and (max-width: 2559px) and (min-width: 1440px) {
+  /* logo */
+  #Logo, #LogoHover {
+    height: 250px;
+  }
+
+  /* link buttons */
+  .Button p {
+    font-size: 25px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* music */
+  #MusicPlayer {
+    height: 166px;
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  /* logo */
+  #Logo, #LogoHover {
+    height: 200px;
+  }
+
+  /* link buttons */
+  .Button p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  /* music */
+  #MusicPlayer {
+    height: 142px;
+  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  /* logo */
+  #Logo, #LogoHover {
+    height: 150px;
+  }
+
+  /* link buttons */
+  .Button p {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* music */
+  #MusicPlayer {
+    height: 98px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  /* logo */
+  #Logo, #LogoHover {
+    height: 100px;
+  }
+
+  /* link buttons */
+  .Button p {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  /* music */
+  #MusicPlayer {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+    /* logo */
   #Logo, #LogoHover {
     width: auto;
     height: 50px;
   }
 
-  .Content {
-    margin-top: 50px;
-  }
-
-  #Skyline {
-    height: 50px;
-  }
-
+  /* link buttons */
   #Links {
     display: block;
   }
@@ -364,5 +483,10 @@ a:hover {
     font-size: 10px;
     padding: 0px;
     margin: 0px;
+  }
+
+  /* music */
+  #MusicPlayer {
+    display: none;
   }
 }
