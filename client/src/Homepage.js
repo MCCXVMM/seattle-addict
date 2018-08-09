@@ -13,18 +13,11 @@ class Homepage extends Component {
       <div>
         <NavBar />
 
-<<<<<<< HEAD
-        <table>
-          <tbody>
-            <tr>
-              <td>
-=======
         <table id='Homepage'>
           <tbody>
             <tr>
               <td>
                 {/* Kendra's Search Bar */}
->>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
                 <div id='SearchBarContainer'>
                   <img className='Background' src={Background} alt='Background' />
                   <form id='SearchBar'>
