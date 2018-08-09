@@ -11,9 +11,15 @@ class Links extends Component {
   render() {
     return (
       <div id='Links'>
-        <p className='Button'><a href='/about-us'>About Us</a></p>
-        <p id='LinkBorder' className='Button'><a href='/map-of-events'>Map</a></p>
-        <p className='Button'><a href='/signup-or-login'>Sign Up</a></p>
+        <div className='Button'>
+          <a href='/about-us'><p>About Us</p></a>
+        </div>
+        <div className='Button'>
+          <a href='/map-of-events'><p id='LinkBorder'>Map</p></a>
+        </div>
+        <div className='Button'>
+          <a href='/signup-or-login'><p>Sign Up</p></a>
+        </div>
       </div>
     );
   }
