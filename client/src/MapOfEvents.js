@@ -5,12 +5,14 @@ import './App.css';
 class MapOfEvents extends Component {
   constructor(props) {
     super(props)
+    // TODO: I DON'T KNOW WHAT TO DO HERE
   }
 
   render() {
     return (
       <div>
         <NavBar />
+<<<<<<< HEAD
         <div>
           <table id='MapCalDes'>
             <tr>
@@ -23,6 +25,20 @@ class MapOfEvents extends Component {
                     <td>
                       <iframe src="https://calendar.google.com/calendar/embed?src=lo1g5erva50mj5olpe940f1rgs%40group.calendar.google.com&ctz=America%2FLos_Angeles" width="400" height="400"></iframe>
                     </td>
+=======
+
+        <table id='MapCalDes'>
+            <tr>
+              <td>
+                <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1ZdjvcSz5tbyURWV4dx5YgBA1PeN0wmtl" width="800" height="680"></iframe>
+              </td>
+              <td>
+                <table id='CalDes'>
+                   <tr>
+                     <td>
+                       <iframe src="https://calendar.google.com/calendar/embed?src=lo1g5erva50mj5olpe940f1rgs%40group.calendar.google.com&ctz=America%2FLos_Angeles" width="400" height="400"></iframe>
+                     </td>
+>>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
                   </tr>
                   <tr>
                     <td>
@@ -32,10 +48,16 @@ class MapOfEvents extends Component {
                     </td>
                   </tr>
                 </table>
+<<<<<<< HEAD
               </td>
             </tr>
           </table>
         </div>
+=======
+               </td>
+             </tr>
+           </table>
+>>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
       </div>
 
     );

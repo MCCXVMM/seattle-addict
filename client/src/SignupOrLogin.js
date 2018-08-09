@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Signup from './Signup';
 import Login from './Login';
+import LoginBackground from './LoginBackground.png';
+import SignupBackground from './SignupBackground.png';
+import SignupText from './SignupText';
+import LoginText from './LoginText';
 
 class SignupOrLogin extends Component {
   constructor(props) {
@@ -22,14 +26,26 @@ class SignupOrLogin extends Component {
     return (
       <div>
         <NavBar />
-        
-        <div className='AccountBoxes'>
-          <div className='SignupBox'>
-            <Signup lift={this.liftTokenToState} />
-          </div>
-          <div className='LoginBox'>
-            <Login lift={this.liftTokenToState} />
-          </div>
+
+        <div>
+          <table id='SignupOrLogin'>
+            <tr>
+              <td id='LoginBorder' className='AccountBoxes'>
+                <img id='Login' src={LoginBackground} alt='Login Background'/>
+                <div id='LoginBox'>
+                  <LoginText />
+                  <Login lift={this.liftTokenToState} />
+                </div>
+              </td>
+              <td className='AccountBoxes'>
+                <img id='Signup' src={SignupBackground} alt='Signup Background'/>
+                <div id='SignupBox'>
+                  <SignupText />
+                  <Signup lift={this.liftTokenToState} />
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     );
