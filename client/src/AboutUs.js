@@ -8,6 +8,7 @@ import kezi from './FILLERKEZIA.png';
 class AboutUs extends Component {
   constructor(props) {
     super(props)
+    // TODO: I DON'T KNOW WHAT TO DO HERE
   }
 
   render() {
@@ -35,22 +36,22 @@ class AboutUs extends Component {
               <tr>
                 <td>
                   <p>
-                    <img src={jess} />
+                    <img src={jess} alt='Member'/>
                   </p>
                 </td>
                 <td>
                   <p>
-                    <img src={kezi} />
+                    <img src={kezi} alt='Member'/>
                   </p>
                 </td>
                 <td>
                   <p>
-                    <img src={andy} />
+                    <img src={andy} alt='Member'/>
                   </p>
                 </td>
                 <td>
                   <p>
-                    <img src={kend} />
+                    <img src={kend} alt='Member'/>
                   </p>
                 </td>
               </tr>
