@@ -5,17 +5,26 @@ import Background from './PPM.jpg';
 class Homepage extends Component {
   constructor(props) {
     super(props)
+      // TODO: I DON'T KNOW WHAT TO DO HERE
   }
 
   render() {
     return (
-      <div id='Homepage'>
+      <div>
         <NavBar />
 
+<<<<<<< HEAD
         <table>
           <tbody>
             <tr>
               <td>
+=======
+        <table id='Homepage'>
+          <tbody>
+            <tr>
+              <td>
+                {/* Kendra's Search Bar */}
+>>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
                 <div id='SearchBarContainer'>
                   <img className='Background' src={Background} alt='Background' />
                   <form id='SearchBar'>
