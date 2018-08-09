@@ -16,21 +16,32 @@ class Homepage extends Component {
         <table id='Homepage'>
           <tbody>
             <tr>
-              <td>
-                {/* Kendra's Search Bar */}
+              <td colSpan='4'>
                 <div id='SearchBarContainer'>
                   <img className='Background' src={Background} alt='Background' />
                   <form id='SearchBar'>
-                    <input id='TEST' type="text" name="search" placeholder="Search Seattle Addict" />
+                    <input id='SearchBarStyle' type="text" name="search" placeholder="Search Seattle Addict" />
                   </form>
                 </div>
-                <div>
-                    <h1>Explore Seattle</h1>
-                    <button class="button button1">Events</button>
-                        <button class="button button2">Community Centers</button>
-                        <button class="button button3">Food</button>
-                        <button class="button button4">Stores</button>
-                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colSpan='4'>
+                <h1>Explore Seattle</h1>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class='button button1'>Events</button>
+              </td>
+              <td>
+                <button class='button button2'>Community Centers</button>
+              </td>
+              <td>
+                <button class='button button3'>Food</button>
+              </td>
+              <td>
+                <button class='button button4'>Stores</button>
               </td>
             </tr>
           </tbody>
