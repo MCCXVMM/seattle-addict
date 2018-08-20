@@ -101,26 +101,6 @@ input[type=text]#TEST:focus {
   border-bottom: 5px solid white;
 }
 
-<<<<<<< HEAD
-.flex-container {
-  display: inline-flex;
-  justify-content: center;
-  background-color: transparent;
-  padding: 20px;
-}
-
-.flex-container > div {
-  background-color: white;
-  color: black;
-  font-family: inherit;
-  font-style: italic;
-  width: 200px;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 30px;
-=======
 #SearchBarContainer {
   position: relative;
 }
@@ -205,7 +185,6 @@ input[type=text]#TEST:focus {
  .button4:hover {
   background-color: #555555;
   color: white
->>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
 }
 
 /* ===== CSS for AboutUs ===== */
@@ -288,19 +267,12 @@ input[type=text]#TEST:focus {
  position: sticky;
 }
 
-<<<<<<< HEAD
-#NavBar table {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-=======
 .AccountBoxes {
   position: relative;
 }
 
 /* ===== CSS for NavBar ===== */
 #NavBar {
->>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
   width: 100%;
   background: black;
   border-bottom: 5px solid white;
@@ -337,12 +309,8 @@ input[type=text]#TEST:focus {
 /* ===== CSS for Skyline ===== */
 #Skyline {
   width: 100%;
-<<<<<<< HEAD
-  height: 200px;
-=======
   height: 100%;
   max-height: 250px;
->>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
   overflow: hidden;
   vertical-align: bottom;
 }
@@ -391,7 +359,6 @@ input[type=text]#TEST:focus {
   color: white;
 }
 
-<<<<<<< HEAD
 /* ===== CSS for SecNavButtons ==== */
 
 .button {
@@ -466,19 +433,6 @@ input[type=text]#TEST:focus {
 
 @media screen and (max-width: 1024px) {
   #Logo {
-=======
-/* ===== CSS for responsiveness of website ===== */
-@media screen and (min-width: 375px) and (max-width: 1024px) {
-  #Login {
-    width: 90%;
-  }
-
-  #Signup {
-    width: 90%;
-  }
-
-  #Logo, #LogoHover {
->>>>>>> 470167a1061e023d3d2ac334f4e651038fac4adc
     width: auto;
     height: 150px;
   }
