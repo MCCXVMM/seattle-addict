@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
-import jess from './FILLERJESSICA.png';
-import andy from './FILLERANDY.png';
-import kend from './FILLERKENDRA.png';
+import jess from './FILLERJESSICA.JPG';
+import andy from './FILLERANDY.JPG';
+import kend from './FILLERKENDRA.JPG';
 import kezi from './FILLERKEZIA.png';
 
 class AboutUs extends Component {
@@ -35,60 +35,62 @@ class AboutUs extends Component {
             <table>
               <tr>
                 <td>
-                  <p>
-                    <img src={jess} alt='Member'/>
+                  <p className='ImageJess'>
+                    <img src={jess} alt='Member' className='AboutUsImageJess'/>
                   </p>
                 </td>
                 <td>
-                  <p>
-                    <img src={kezi} alt='Member'/>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    <img src={andy} alt='Member'/>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    <img src={kend} alt='Member'/>
+                  <p className='ImageKezia'>
+                    <img src={kezi} alt='Member' className='AboutUsImageKezi'/>
                   </p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <h2>
+                  <h2 className='JessTitle'>
                     Jessica Louie
                   </h2>
-                  <p>
+                  <p className='JessDesc'>
                     Head Manager/Main Programmer
                   </p>
                 </td>
                 <td>
-                  <h2>
+                  <h2 className='KeziaTitle'>
                     Kezia Catrece
                   </h2>
-                  <p>
+                  <p className='KeziaDesc'>
                     Marketing Manager/Interviewer
                   </p>
                 </td>
+              </tr>
+                <tr>
+                  <td>
+                    <p className='ImageAndy'>
+                      <img src={andy} alt='Member'className='AboutUsImageAndy'/>
+                    </p>
+                  </td>
+                  <td>
+                    <p className='ImageKendra'>
+                      <img src={kend} alt='Member'className='AboutUsImageKendra'/>
+                    </p>
+                  </td>
+                </tr>
                 <td>
-                  <h2>
+                  <h2 className='AndyTitle'>
                     Andy Manzano
                   </h2>
-                  <p>
+                  <p className='AndyDesc'>
                     Company Organizer/Interviewer
                   </p>
                 </td>
                 <td>
-                  <h2>
+                  <h2 className='KendraTitle'>
                     Kendra Okoro
                   </h2>
-                  <p>
+                  <p className='KendraDesc'>
                     Editoral Manager/Journalist
                   </p>
                 </td>
-              </tr>
             </table>
           </div>
         </div>

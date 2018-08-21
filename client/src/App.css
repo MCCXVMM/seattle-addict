@@ -151,7 +151,6 @@ input[type=text]#TEST:focus {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 10px;
 }
 
  .button1 {
@@ -200,30 +199,98 @@ input[type=text]#TEST:focus {
 
 /* ===== CSS for AboutUs ===== */
 #AboutUs {
-  background: white;
+  background: black;
   padding: 50px;
   overflow: hidden;
 }
 
 #GeneralAboutUs {
   float: left;
-  width: 30%;
+  width: 100%;
+  color: white;
+  text-align: center;
+
 }
 
 #SpecificAboutUs {
   float: right;
-  width: 70%;
+  width: 100%;
+  align-content: center;
 }
 
+#AboutUs h1 {
+  text-align: center;
+  color: rgb(88,222,253);
+}
+.AboutUsImageAndy {
+  width: 80%;
+  height: 80%;
+}
+.ImageAndy {
+  text-align: center;
+}
+.AboutUsImageJess{
+  width: 85%;
+  height: 80%;
+}
+.ImageJess{
+  text-align: center;
+}
+.AboutUsImageKendra{
+  width: 78%;
+  height: 80%;
+}
+.ImageKendra {
+  text-align: center;
+}
+.AboutUsImageKezi{
+  width: 75%;
+  height: 75%;
+}
+.ImageKezia{
+  text-align: center;
+}
+.JessTitle{
+  color: rgb(88,222,253);
+  text-align: center;
+}
+.KeziaTitle{
+  color: rgb(88,222,253);
+  text-align: center;
+}
+.AndyTitle{
+  color: rgb(88,222,253);
+  text-align: center;
+}
+.KendraTitle{
+  color: rgb(88,222,253);
+  text-align: center;
+}
+.JessDesc{
+  color: white;
+  text-align: center;
+}
+.KeziaDesc{
+  color: white;
+  text-align: center;
+}
+.AndyDesc{
+  color: white;
+  text-align: center;
+}
+.KendraDesc{
+  color: white;
+  text-align: center;
+}
 /* ===== CSS for MapOfEvents ===== */
 #MapCalDes td {
   color: white;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
 }
-#CalDes h1 h2 {
+#CalDes h1 {
   font-style: italic;
-  color: blue;
+  color: rgb(88,222,253);
 }
 
 /* ===== CSS for SignupOrLogin ===== */
